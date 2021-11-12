@@ -207,14 +207,14 @@ class TrafficViewer:
         if self.first_start == True:
             self.first_start = False
             self.dlg = TrafficViewerDialog()
-            QMessageBox.information(self.dlg, "message0", "should only run once")
+            #QMessageBox.information(self.dlg, "message0", "should only run once")
         self.dlg.spbStyle.valueChanged.connect(self.evt_trafficViewer)
         self.dlg.cmbBaseMap.currentTextChanged.connect(self.evt_trafficViewer)
         self.dlg.cmbLanguage.currentTextChanged.connect(self.evt_trafficViewer)
         self.dlg.cmbAnnotation.currentTextChanged.connect(self.evt_trafficViewer)
         self.dlg.show()
         # Run the dialog event loop
-        result = self.dlg.exec_()
+        #result = self.dlg.exec_()
         # See if OK was pressed
       
         
@@ -226,11 +226,12 @@ class TrafficViewer:
         language = self.dlg.cmbLanguage.currentText()
         iAnnotation = self.dlg.cmbAnnotation.currentText()
         floatStyle = float(ispbStyle)  
-        result = self.dlg.exec_() 
-        if result:
+        result = True
+        #result = self.dlg.exec_()
+        if result == self.dlg.exec_() :
             # Do something useful here - delete the line containing pass and
             # substitute with your code.
-            #########################################################################
+                #########################################################################
                 #                                                                       #
                 #                                the code part                          #
                 #                       that will add data to the link                  #
