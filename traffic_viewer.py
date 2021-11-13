@@ -220,7 +220,6 @@ class TrafficViewer:
         
     
     def evt_trafficViewer(self, result):
-        self
         ispbStyle = self.dlg.spbStyle.value()
         baseMap = self.dlg.cmbBaseMap.currentText()
         language = self.dlg.cmbLanguage.currentText()
