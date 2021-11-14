@@ -1,2 +1,3 @@
 # QGIS-Traffic-Viewer
 allows the user to add  googlemap traffic layer with realtime traffic data as a layer.
+Allows the user to load and automatically add the google map traffic layer with its Realtime data. thus, giving a very powerfull tool to planners to use correct data collected by google maps. This plugin will be very useful to solve traffic problems as it will point out the malfunctioning junctions. this plugin can be used as a simple roadmap layer or a road map with a basemap to it such as normal googlemap baseman, satellite, hybrid or in the future this plugin will have more traffic data sources such as TOMTOM HERE .... etc to be able to have a more indepth understanding of the traffic
