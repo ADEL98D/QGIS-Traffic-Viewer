@@ -332,7 +332,7 @@ class TrafficViewer:
             def loadXYZ(url, name):
                 rasterLyr = QgsRasterLayer("type=xyz&url=" + url, name, "WMS")
                 QgsProject.instance().addMapLayer(rasterLyr)
-            urlWithParams = 'type=xyz&url=https://mt0.google.com/vt/lyrs%3D'+map_type+'@221097413,traffic%7Cseconds_into_week:0%26hl%3D'+langue+'%26style%3D'+style+'%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&zmax=18&zmin=3&crs=EPSG3857'
+            urlWithParams = 'type=xyz&url=https://mt0.google.com/vt/lyrs%3D'+map_type+'@221097413,traffic%7Cseconds_into_week:-1%26hl%3D'+langue+'%26style%3D'+style+'%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&zmax=18&zmin=3&crs=EPSG3857'
             loadXYZ(urlWithParams, 'Trafic_Layer')
             QMessageBox.information(self.dlg, "message0", "map loaded successfully")       
 
