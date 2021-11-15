@@ -6,7 +6,7 @@
 name=Traffic Viewer
 qgisMinimumVersion=3.0
 description=allows the user to add  googlemap traffic layer with realtime traffic data as a layer.
-version=0.1
+version=0.1.1
 author=Adel HADDID. Amine LARBI
 email=adel.haddid@etu.usthb.dz
 
@@ -21,6 +21,8 @@ repository=https://github.com/ADEL98D/QGIS-Traffic-Viewer
 hasProcessingProvider=no
 # Uncomment the following line and add your changelog:
 # changelog=
+	0.1.1 : made the plugin show more accurate real-time data
+	0.1.0 : first release ! expriperimental but still !
 
 # Tags are comma separated with spaces allowed
 tags=google, html, import, layers, routing, tiles, wms, web, traffic, road traffic,
